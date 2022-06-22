@@ -35,7 +35,12 @@ namespace EtecNews
             this.Hide();
             FormPrincipal.Show();
         }
-        
+
+        private void btnVoltarIndex_Click(object sender, EventArgs e)
+        {
+            FormPrincipal.Show();
+            this.Close();            
+        }
     }
    
 }

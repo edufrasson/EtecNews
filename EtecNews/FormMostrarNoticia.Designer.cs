@@ -30,13 +30,14 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblMostrarTitulo = new System.Windows.Forms.Label();
-            this.lblMostrarDescricao = new System.Windows.Forms.TextBox();
+            this.lblMostrarDescricao = new System.Windows.Forms.RichTextBox();
+            this.btnVoltarIndex = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Controls.Add(this.lblMostrarTitulo);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -46,41 +47,58 @@
             // 
             // lblMostrarTitulo
             // 
+            this.lblMostrarTitulo.AutoEllipsis = true;
             this.lblMostrarTitulo.AutoSize = true;
-            this.lblMostrarTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMostrarTitulo.Location = new System.Drawing.Point(50, 44);
+            this.lblMostrarTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMostrarTitulo.Location = new System.Drawing.Point(3, 38);
             this.lblMostrarTitulo.Name = "lblMostrarTitulo";
-            this.lblMostrarTitulo.Size = new System.Drawing.Size(59, 26);
+            this.lblMostrarTitulo.Size = new System.Drawing.Size(93, 39);
             this.lblMostrarTitulo.TabIndex = 0;
             this.lblMostrarTitulo.Text = "teste";
+            this.lblMostrarTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMostrarDescricao
             // 
+            this.lblMostrarDescricao.BackColor = System.Drawing.Color.White;
             this.lblMostrarDescricao.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lblMostrarDescricao.Enabled = false;
-            this.lblMostrarDescricao.Location = new System.Drawing.Point(36, 175);
-            this.lblMostrarDescricao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.lblMostrarDescricao.Multiline = true;
+            this.lblMostrarDescricao.Font = new System.Drawing.Font("Trebuchet MS", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMostrarDescricao.Location = new System.Drawing.Point(10, 135);
             this.lblMostrarDescricao.Name = "lblMostrarDescricao";
             this.lblMostrarDescricao.ReadOnly = true;
-            this.lblMostrarDescricao.Size = new System.Drawing.Size(403, 325);
-            this.lblMostrarDescricao.TabIndex = 2;
+            this.lblMostrarDescricao.Size = new System.Drawing.Size(454, 408);
+            this.lblMostrarDescricao.TabIndex = 4;
+            this.lblMostrarDescricao.Text = "";
+            // 
+            // btnVoltarIndex
+            // 
+            this.btnVoltarIndex.BackColor = System.Drawing.Color.Gray;
+            this.btnVoltarIndex.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltarIndex.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVoltarIndex.Location = new System.Drawing.Point(15, 568);
+            this.btnVoltarIndex.Name = "btnVoltarIndex";
+            this.btnVoltarIndex.Size = new System.Drawing.Size(81, 30);
+            this.btnVoltarIndex.TabIndex = 7;
+            this.btnVoltarIndex.Text = "Voltar";
+            this.btnVoltarIndex.UseVisualStyleBackColor = false;
+            this.btnVoltarIndex.Click += new System.EventHandler(this.btnVoltarIndex_Click);
             // 
             // FormMostrarNoticia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 555);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(476, 610);
+            this.Controls.Add(this.btnVoltarIndex);
             this.Controls.Add(this.lblMostrarDescricao);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormMostrarNoticia";
             this.Text = "FormMostrarNoticia";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -88,6 +106,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblMostrarTitulo;
-        public System.Windows.Forms.TextBox lblMostrarDescricao;
+        private System.Windows.Forms.RichTextBox lblMostrarDescricao;
+        private System.Windows.Forms.Button btnVoltarIndex;
     }
 }

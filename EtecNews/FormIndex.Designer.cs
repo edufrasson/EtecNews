@@ -80,7 +80,7 @@
             this.FlowLayoutPanel.Margin = new System.Windows.Forms.Padding(15, 4, 2, 4);
             this.FlowLayoutPanel.Name = "FlowLayoutPanel";
             this.FlowLayoutPanel.Padding = new System.Windows.Forms.Padding(30, 5, 5, 5);
-            this.FlowLayoutPanel.Size = new System.Drawing.Size(688, 513);
+            this.FlowLayoutPanel.Size = new System.Drawing.Size(804, 513);
             this.FlowLayoutPanel.TabIndex = 1;
             // 
             // panel2
